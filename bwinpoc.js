@@ -1,4 +1,4 @@
-fetch('https://www.bwin.de/de/api/clientconfig', { credentials: 'include' })
+fetch('https://www.bwin.de/de/mobileportal/api/PersonalDetails', { credentials: 'include' })
   .then(res => res.json())
   .then(data => {
     const queryParams = Object.keys(data).map(key => 
